@@ -1,0 +1,54 @@
+<div class="col-md-12">
+      <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <tr  class="table-danger">
+              <td colspan=2>coord</td> <td rowspan=2>Visibility</td> <td rowspan=2>City</td> <td rowspan=2>ID</td> <td rowspan=2>CODE</td>
+              <!-- <td colspan=4>weather</td><td rowspan=2>base</td><td colspan=5>main</td>  -->
+            </tr><tr>  
+              <td>Lon</td><td>lat</td>
+              <!-- <td>id</td><td>main</td><td>descn</td><td>icon</td> -->
+              <!-- <td>tmp</td><td>pressure</td> <td>Humidity</td><td>temp_min</td><td>temp_max</td> -->
+            </tr>
+              <!--   <th> coord  <tr><td colspan=2 >Lon</td><td>lat</td></tr> </th>
+              <th> weather <tr><td>ID</td><td>Main</td> <td>Description</td><td>Icon</td></tr></th>
+              <th> base </th>
+              <th> Main <tr><td>tmp</td><td>pressure</td> <td>Humidity</td><td>temp_min</td><td>temp_max</td></tr> </th>
+              <th> visibility </th>
+              <th>wind<tr><td>speed</td><td>deg</td></tr></th>
+              <th> clouds </th>
+              <th> dt </th>
+              <th> sys <tr><td>typ</td><td>id</td> <td>msg</td><td>country</td><td>sunrise</td><td>sunset</td></tr></th>
+              <th> id </th>
+              <th> name </th>
+              <th> cod </th>
+            </tr>-->
+            <tr>
+              <td>{{abc}}</td> <td>{{def}}</td><td>{{visi}}</td>
+              <td>{{city}}</td><td>{{id}}</td><td>{{code}}</td>
+              <!-- <td>{{whether.weather.id}}</td><td>{{whether.weather.main}}</td><td>{{whether.weather.description}}</td><td>{{whether.weather.icon}}</td>
+              <td>{{whether.base}}</td> -->
+              <!-- <td>{{whether.main.temp}}</td><td>{{whether.main.pressure}}</td><td>{{whether.main.humidity}}</td><td>{{whether.main.temp_min}}</td><td>{{whether.main.temp_max}}</td> -->
+              
+              
+              
+              
+              
+              
+              <!-- <td>{{whether.clouds}}</td>
+              <td>{{whether.dt}}</td>
+              <td>{{whether.sys}}</td>
+              <td>{{whether.id}}</td>
+              <td>{{whether.name}}</td>
+              <td>{{whether.cod}}</td> -->
+              
+              
+              
+            </tr>
+          </table>
+      </div>
+    </div>
+
+
+    <div>
+      <ng2-smart-table [settings]="settings" [source]="data" ></ng2-smart-table>
+    </div>

@@ -1,0 +1,61 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+       <!--forms-->
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <div class="space-medium">
+        <div class="container">
+            <div class="row">
+                      <!--sing-up-form-->
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <div class="account-holder">
+                        <h3>Employee registration Process</h3>
+                        <a class="btn btn-danger" [routerLink]="['/emp']">View Employee List</a>
+                        <br>
+                        <div class="row">
+                            <form #frm="ngForm" (ngSubmit)= "onSubmit(frm.value)">
+                                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label required" for="name"> Name<sup style="color:red">*</sup></label>
+                                        <input  name="usrNm" #usrNm="ngModel" ngModel type="text" class="form-control" placeholder="Enter Your NAme">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                  <div class="form-group">
+                                      <label class="control-label required" for="email">Email<sup style="color:red">*</sup></label>
+                                      <input #femail="ngModel" ngModel name="femail" type="text" class="form-control" placeholder="Enter Email Address">
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label required" for="dob">DOB<sup style="color:red">*</sup></label>
+                                    <input  name="dob" #dob="ngModel" ngModel type="date" class="form-control" placeholder="Enter Mobile Number">
+                                </div>
+                              </div>
+                                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label required" for="phone">Phone<sup style="color:red">*</sup></label>
+                                        <input  name="phoneNo" #phoneNo="ngModel" ngModel type="text" class="form-control" placeholder="Enter Mobile Number">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label required" for="address">Address<sup style="color:red">*</sup></label>
+                                        <input #addr="ngModel" ngModel name="addr" type="text" class="form-control" placeholder="password">
+                                    </div>
+                                </div>
+                                <input type="hidden" class="form-control" name="_id" #id="ngModel" ngModel [(ngModel)]="id1">
+                                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+                   
+            </div>
+        </div>
